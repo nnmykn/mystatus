@@ -21,4 +21,8 @@ infoArray.MaxTouchPoints = navigator.maxTouchPoints;
     
 for(key in infoArray){
     information.innerHTML+=("<div><span>"+"<b>"+key+"</b>"+": "+infoArray[key]+"</span></div>");
-}    
+}
+
+setTimeout(function () {
+    location.reload();
+}, 20000);
