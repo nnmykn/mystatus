@@ -23,4 +23,31 @@ $black : #31373D;
         width: fit-content;
         overflow: hidden;
     }
+    .info {
+        font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+        border-collapse: collapse;
+        text-align: left;
+        background-color: #ffffff;
+        color: rgb(40, 35, 66);
+        border-radius: 15px;
+        width: fit-content;
+        margin: 2vh;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 18px;
+        div {
+            border-bottom: solid 1px #eee;
+            cursor: pointer;
+            padding: 15px 0;
+            span {
+                margin: 10px;
+                b {
+
+                }
+            }
+        }
+        div:hover {
+            background-color: #f1f1f1;
+        }
+    }
 }

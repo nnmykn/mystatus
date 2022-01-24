@@ -29,7 +29,7 @@ const Page: NextPage = () => {
                 <Link href="/ip"><a>
                     <button className={styles.button}><span>IP info</span></button>
                 </a></Link>
-                <div id="information"></div>
+                <div id="information" className={styles.info}></div>
             </main>
             <Script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" strategy="afterInteractive"/>
             <Script src="/js/info.js" strategy="afterInteractive"/>
