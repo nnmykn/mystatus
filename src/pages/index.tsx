@@ -10,8 +10,14 @@ import styles from "../styles/top.module.scss"
 
 import { Notification } from "baseui/notification"
 
-type Props = { ip: string };
-const Page = ({ ip }: Props) => {
+const url = "https://ipinfo.io?callback"
+const Page = () => {
+    const [ip, setIp] = React.useState(0);
+    React.useEffect(() => {
+        fetch(url)
+        .then((r) => r.json())
+        .then((j) => setIp(j.ip));
+    }, []);
     return (
         <div>
             <Head>
@@ -34,16 +40,6 @@ const Page = ({ ip }: Props) => {
         </div>
     )
 }
-const url = "https://ipinfo.io?callback"
-export async function getServerSideProps() {
-    const json = await fetch(url).then((r) => r.json());
-    const ip = json.ip;
-    return {
-        props: {
-        ip,
-        },
-    };
-}
-  
+
 
 export default Page
