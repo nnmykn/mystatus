@@ -23,10 +23,6 @@ const Header: FunctionComponent = () => {
     const [css] = useStyletron()
     return (
     <div>
-    <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet"/>
-    </Head>
     <header>
         <AppNavBar
             title={(

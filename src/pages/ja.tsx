@@ -29,7 +29,7 @@ const Page = () => {
     return (
         <div>
             <Head>
-                <link rel="canonical" href="https://status.go5.run/"/>
+                <link rel="canonical" href="https://status.go5.run/ja/"/>
                 <title key="site:title">MyStatus | 👣Displays the information published by your browser</title>
             </Head>
             <main className={styles.main}>
@@ -47,8 +47,8 @@ const Page = () => {
                     <button className={styles.button}><span>Contact</span></button>
                 </a></Link>
                 <div></div>
-                <div id="ip" className={styles.ip}><h1>Your Global IP: {ip}</h1></div>
-                <div id="ip" className={styles.ip}><h1>Your City: {city}</h1></div>
+                <div id="ip" className={styles.ip}><h1>あなたのグローバルIP: {ip}</h1></div>
+                <div id="ip" className={styles.ip}><h1>あなたの街: {city}</h1></div>
                 <div id="information" className={styles.info}></div>
             </main>
             <Script src="/js/info.js" strategy="afterInteractive"/>

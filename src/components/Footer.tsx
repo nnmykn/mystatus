@@ -20,10 +20,10 @@ const Footer: FunctionComponent = () => {
         </div>
         <div>
             <Link href="https://go5.run/">
-                <a className={styles.link}>運営</a>
+                <a className={styles.link}>Our Team</a>
             </Link>
             <Link href="/terms-of-use">
-                <a className={styles.link}>利用規約</a>
+                <a className={styles.link}>Terms</a>
             </Link>
         </div>
     </footer>
