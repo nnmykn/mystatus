@@ -47,6 +47,10 @@ const Page = () => {
                     <button className={styles.button}><span>Contact</span></button>
                 </a></Link>
                 <div></div>
+                <Link href="/ja"><a>
+                    <button className={styles.button}><span>JP site</span></button>
+                </a></Link>
+                <div></div>
                 <div id="ip" className={styles.ip}><h1>Your Global IP: {ip}</h1></div>
                 <div id="ip" className={styles.ip}><h1>Your City: {city}</h1></div>
                 <div id="information" className={styles.info}></div>
