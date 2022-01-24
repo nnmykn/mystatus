@@ -8,7 +8,7 @@ import Script from 'next/script'
 
 import styles from "../styles/top.module.scss"
 
-import { Notification } from "baseui/notification"
+import { Notification, KIND } from "baseui/notification"
 
 const url = "https://ipinfo.io?callback"
 const Page = () => {
@@ -28,6 +28,11 @@ const Page = () => {
                 <Notification>
                     {() => "This is a demo version under development. Basically, it does not work properly."}
                 </Notification>
+                </div>
+                <div>
+                    <Notification kind={KIND.negative}>
+                        There is a problem with global IPs not being displayed when reloading many times in a short period of time :(
+                    </Notification>
                 </div>
                 <Link href="mailto:hi@kan.run"><a>
                     <button className={styles.button}><span>Contact</span></button>
