@@ -14,7 +14,7 @@ const Page: NextPage = () => {
         return (
         <div>
             <Head>
-                <title key="site:title">MyStatus</title>
+                <title key="site:title">MyStatus | 👣Displays the information published by your browser!!</title>
             </Head>
             <main className={styles.main}>
                 <div className={styles.notify}>
