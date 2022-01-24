@@ -12,11 +12,19 @@ import { Notification, KIND } from "baseui/notification"
 
 const url = "https://ipinfo.io?callback"
 const Page = () => {
+    // get ip
     const [ip, setIp] = React.useState(0);
     React.useEffect(() => {
         fetch(url)
         .then((r) => r.json())
         .then((j) => setIp(j.ip));
+    }, []);
+    // get city
+    const [city, setCity] = React.useState(0);
+    React.useEffect(() => {
+        fetch(url)
+        .then((r) => r.json())
+        .then((j) => setCity(j.city));
     }, []);
     return (
         <div>
@@ -25,11 +33,11 @@ const Page = () => {
             </Head>
             <main className={styles.main}>
                 <div className={styles.notify}>
-                <Notification>
+                <Notification  kind={KIND.warning}>
                     {() => "This is a demo version under development. Basically, it does not work properly."}
                 </Notification>
                 </div>
-                <div>
+                <div className={styles.notify}>
                     <Notification kind={KIND.negative}>
                         There is a problem with global IPs not being displayed when reloading many times in a short period of time :(
                     </Notification>
@@ -39,6 +47,7 @@ const Page = () => {
                 </a></Link>
                 <div></div>
                 <div id="ip" className={styles.ip}><h1>Your Global IP: {ip}</h1></div>
+                <div id="ip" className={styles.ip}><h1>Your City: {city}</h1></div>
                 <div id="information" className={styles.info}></div>
             </main>
             <Script src="/js/info.js" strategy="afterInteractive"/>
