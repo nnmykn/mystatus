@@ -31,7 +31,7 @@ const Page: NextPage = () => {
                 </a></Link>
                 <div id="information"></div>
             </main>
-            <Script src="https://status.go5.run/js/info.js" strategy="afterInteractive"/>
+            <Script src="/js/info.js" strategy="afterInteractive"/>
         </div>
     )
 }
