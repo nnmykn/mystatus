@@ -10,7 +10,8 @@ import styles from "../styles/top.module.scss"
 
 import { Notification } from "baseui/notification"
 
-function Page({ ip }) {
+type Props = { ip: string };
+const Page = ({ ip }: Props) => {
     return (
         <div>
             <Head>
@@ -33,10 +34,15 @@ function Page({ ip }) {
         </div>
     )
 }
-Page.getInitialProps = async ({ req }) => {
-    const res = await fetch('https://ipinfo.io?callback')
-    const json = await res.json()
-    return { ip: json.ip }
+const url = "https://ipinfo.io?callback"
+export async function getServerSideProps() {
+    const json = await fetch(url).then((r) => r.json());
+    const ip = json.ip;
+    return {
+        props: {
+        ip,
+        },
+    };
 }
   
 
