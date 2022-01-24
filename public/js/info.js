@@ -1,6 +1,12 @@
 const information=document.getElementById("information");
 const infoArray=[];
 
+const API_URL = 'https://api.ipify.org/?format=json'
+const res = await fetch(API_URL)
+const data = await res.json()
+console.log(data.ip)
+
+infoArray.グローバルIP=data.ip;
 infoArray.ホスト=location.host;
 infoArray.ホスト名=location.hostname;
 infoArray.ポート番号=location.port;
