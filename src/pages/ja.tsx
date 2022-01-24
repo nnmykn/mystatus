@@ -34,13 +34,13 @@ const Page = () => {
             </Head>
             <main className={styles.main}>
                 <div className={styles.notify}>
-                <Notification  kind={KIND.warning}>
-                    {() => "This is a demo version under development. Basically, it does not work properly."}
-                </Notification>
+                    <Notification  kind={KIND.warning}>
+                        {() => "これは開発中のデモ版です。基本的には正常に動作しません。"}
+                    </Notification>
                 </div>
                 <div className={styles.notify}>
                     <Notification kind={KIND.negative}>
-                        There is a problem with global IPs not being displayed when reloading many times in a short period of time :(
+                        {() => "短時間に何度もリロードすると、グローバルIPが表示されなくなる問題があります :("}
                     </Notification>
                 </div>
                 <Link href="mailto:hi@kan.run"><a>

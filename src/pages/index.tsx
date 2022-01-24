@@ -40,7 +40,7 @@ const Page = () => {
                 </div>
                 <div className={styles.notify}>
                     <Notification kind={KIND.negative}>
-                        There is a problem with global IPs not being displayed when reloading many times in a short period of time :(
+                        {() => "There is a problem with global IPs not being displayed when reloading many times in a short period of time :("}
                     </Notification>
                 </div>
                 <Link href="mailto:hi@kan.run"><a>
