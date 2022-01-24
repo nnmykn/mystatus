@@ -51,7 +51,7 @@ const Page = () => {
                 <div id="ip" className={styles.ip}><h1>あなたの街: {city}</h1></div>
                 <div id="information" className={styles.info}></div>
             </main>
-            <Script src="/js/info.js" strategy="afterInteractive"/>
+            <Script src="/js/info-jp.js" strategy="afterInteractive"/>
         </div>
     )
 }
