@@ -77,11 +77,13 @@ const Page = () => {
                     <button className={styles.button}><span>JP site</span></button>
                 </a></Link>
                 <div></div>
+                <div className={styles.ips}>
                 <div id="ip" className={styles.ip}><h1>Your Global IP: {ip}</h1></div>
                 <div id="ip" className={styles.ip}><h1>Your Region: {region}</h1></div>
                 <div id="ip" className={styles.ip}><h1>Your City: {city}</h1></div>
                 <div id="ip" className={styles.ip}><h1>Your Hostname: {hostname}</h1></div>
                 <div id="ip" className={styles.ip}><h1>Your Provider: {org}</h1></div>
+                </div>
                 <div id="information" className={styles.info}></div>
             </main>
             <Script src="/js/info.js" strategy="afterInteractive"/>

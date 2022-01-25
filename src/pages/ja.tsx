@@ -73,11 +73,13 @@ const Page = () => {
                     <button className={styles.button}><span>Contact</span></button>
                 </a></Link>
                 <div></div>
+                <div className={styles.ips}>
                 <div id="ip" className={styles.ip}><h1>あなたのグローバルIP: {ip}</h1></div>
                 <div id="ip" className={styles.ip}><h1>あなたの地域: {region}</h1></div>
                 <div id="ip" className={styles.ip}><h1>あなたの街: {city}</h1></div>
                 <div id="ip" className={styles.ip}><h1>あなたのホストネーム: {hostname}</h1></div>
                 <div id="ip" className={styles.ip}><h1>プロバイダー: {org}</h1></div>
+                </div>
                 <div id="information" className={styles.info}></div>
             </main>
             <Script src="/js/info-jp.js" strategy="afterInteractive"/>
