@@ -60,6 +60,11 @@ const Page = () => {
                     </Notification>
                 </div>
                 <div className={styles.notify}>
+                <Notification  kind={KIND.warning}>
+                    {() => "アドブロックを使用しているとIPaddressなどが正常に表示されない場合があります。"}
+                </Notification>
+                </div>
+                <div className={styles.notify}>
                     <Notification kind={KIND.negative}>
                         {() => "短時間に何度もリロードすると、グローバルIPが表示されなくなる問題があります :("}
                     </Notification>

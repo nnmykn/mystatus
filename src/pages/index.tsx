@@ -60,6 +60,11 @@ const Page = () => {
                 </Notification>
                 </div>
                 <div className={styles.notify}>
+                <Notification  kind={KIND.warning}>
+                    {() => "If you are using adblock, IPaddress and other information may not be displayed correctly."}
+                </Notification>
+                </div>
+                <div className={styles.notify}>
                     <Notification kind={KIND.negative}>
                         {() => "There is a problem with global IPs not being displayed when reloading many times in a short period of time :("}
                     </Notification>
