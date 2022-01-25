@@ -26,6 +26,27 @@ const Page = () => {
         .then((r) => r.json())
         .then((j) => setCity(j.city));
     }, []);
+    // get region
+    const [region, setRegion] = React.useState(0);
+    React.useEffect(() => {
+        fetch(url)
+        .then((r) => r.json())
+        .then((j) => setRegion(j.region));
+    }, []);
+    // get hostname
+    const [hostname, setHostname] = React.useState(0);
+    React.useEffect(() => {
+        fetch(url)
+        .then((r) => r.json())
+        .then((j) => setHostname(j.hostname));
+    }, []);
+    // get org
+    const [org, setOrg] = React.useState(0);
+    React.useEffect(() => {
+        fetch(url)
+        .then((r) => r.json())
+        .then((j) => setOrg(j.org));
+    }, []);
     return (
         <div>
             <Head>
@@ -52,7 +73,10 @@ const Page = () => {
                 </a></Link>
                 <div></div>
                 <div id="ip" className={styles.ip}><h1>Your Global IP: {ip}</h1></div>
+                <div id="ip" className={styles.ip}><h1>Your Region: {region}</h1></div>
                 <div id="ip" className={styles.ip}><h1>Your City: {city}</h1></div>
+                <div id="ip" className={styles.ip}><h1>Your Hostname: {hostname}</h1></div>
+                <div id="ip" className={styles.ip}><h1>Your Provider: {org}</h1></div>
                 <div id="information" className={styles.info}></div>
             </main>
             <Script src="/js/info.js" strategy="afterInteractive"/>
