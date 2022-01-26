@@ -1,12 +1,15 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"/>
-<link type="text/css" rel="stylesheet" id="dark-mode-general-link"/>
-<style lang="en" type="text/css" id="dark-mode-custom-style"/>
-<style lang="en" type="text/css" id="dark-mode-native-style"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
-<loc>https://status.go5.run/</loc>
+  <loc>https://status.go5.run/</loc>
 </url>
 <url>
-<loc>https://status.go5.run/ja/</loc>
+  <loc>https://status.go5.run/ja/</loc>
 </url>
+<url>
+  <loc>https://status.go5.run/terms-of-use/</loc>
+</url>
+
 </urlset>
