@@ -19,6 +19,9 @@ const Footer: FunctionComponent = () => {
             <small>© 2022 Go5 lab.</small>
         </div>
         <div>
+            <Link href="https://github.com/nnmykn/mystatus/">
+                <a className={styles.link}>GitHub</a>
+            </Link>
             <Link href="https://go5.run/">
                 <a className={styles.link}>Our Team</a>
             </Link>
